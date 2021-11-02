@@ -10,18 +10,22 @@
         </tr>
     </thead>
     <tbody>
+<?php foreach ($empleados as $empleado) {?>
+
+
         <tr>
-            <td>1</td>
-            <td>Ismael</td>
-            <td>Hernandez</td>
-            <td>25</td>
-            <td>isma-isma@gmail.com</td>
-            <td>editar | Borrar</td>
+            <td><?php echo $empleado->id; ?></td>
+            <td><?php echo $empleado->nombre; ?></td>
+            <td><?php echo $empleado->apellido; ?></td>
+            <td><?php echo $empleado->edad; ?></td>
+            <td><?php echo $empleado->email; ?></td>
+            <td>
+                <div class="btn-group" role="group" aria-label="">
+                <a href="" class="btn btn-info">Editar</a>
+                <a href="" class="btn btn-danger">Eliminar</a>
+            </div>
+        </td>
         </tr>
-        <tr>
-            <td scope="row"></td>
-            <td></td>
-            <td></td>
-        </tr>
+<?php } ?>
     </tbody>
 </table>

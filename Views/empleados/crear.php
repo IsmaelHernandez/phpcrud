@@ -20,7 +20,7 @@
                class="form-control" name="edad" id="edad" aria-describedby="helpId" placeholder="Edad">
            </div>
            <div class="mb-3">
-             <label for="" class="form-label"></label>
+             <label for="email" class="form-label"></label>
              <input type="email"
                class="form-control" name="email" id="email" aria-describedby="helpId" placeholder="Email">
            </div>
