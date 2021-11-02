@@ -1,9 +1,14 @@
 <?php
-include_once("Controllers/controller_paginas.php");
+// echo $controlador;
+// echo $accion;
+
+include_once("Controllers/controller_".$controlador.".php");
+
+$objControlador="Controller".ucfirst($controlador);
 
 //instanciamos al controller controlador-paginas
-$controller = new ControllerPaginas();
+$controlador = new $objControlador();
 //accede a inicio
-$controller ->inicio();
+$controlador->$accion();
 
 ?>
