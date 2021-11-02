@@ -1,3 +1,6 @@
+<a name="" id="" class="btn btn-success" href="?controlador=empleados&accion=crear" role="button">Agregar Empleado</a>
+
+
 <table class="table table-bordered">
     <thead>
         <tr>
@@ -21,8 +24,8 @@
             <td><?php echo $empleado->email; ?></td>
             <td>
                 <div class="btn-group" role="group" aria-label="">
-                <a href="" class="btn btn-info">Editar</a>
-                <a href="" class="btn btn-danger">Eliminar</a>
+                <a href="?controlador=empleados&accion=editar&id=<?php echo $empleado->id; ?>" class="btn btn-info">Editar</a>
+                <a href="?controlador=empleados&accion=borrar&id=<?php echo $empleado->id; ?>" class="btn btn-danger">Borrar</a>
             </div>
         </td>
         </tr>

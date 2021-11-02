@@ -24,7 +24,7 @@
              <input type="email"
                class="form-control" name="email" id="email" aria-describedby="helpId" placeholder="Email">
            </div>
-           <input name="" id="" class="btn btn-success" type="submit" value="Agregar empleado">
+           <input name="" id="" class="btn btn-success" type="submit" value="Editar empleado">
        </form>
     </div>
     
